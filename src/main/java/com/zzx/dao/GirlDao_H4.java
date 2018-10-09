@@ -108,7 +108,7 @@ public class GirlDao_H4 {
         transaction = session.beginTransaction();//开启事务
 
         //方法一：hql语句查询
-        //String hql = "FROM  GirlEntity g where age=? and cupSize=?";
+        //String hql = "FROM  GirlEntity where age=? and cupSize=?";
         String hql = "FROM  GirlEntity g where g.age=? and g.cupSize=?";
         Query query = session.createQuery(hql);
         query.setParameter(0, 23);
